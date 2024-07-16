@@ -1,0 +1,167 @@
+ 
+
+ def plus(number)
+    return {operation: '+', number: number}
+ end
+ 
+ def minus(number)
+    return {operation: '-', number: number}
+ end
+ 
+ def times(number)
+    return {operation: '*', number: number}
+ end
+ 
+ def divided_by(number)
+    return {operation: '/', number: number}
+ end
+ 
+ def zero(number_hash = nil)
+    return 0 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (2 + number_hash[:number]).to_i
+        when '-'
+        return (2 - number_hash[:number]).to_i
+        when '*'
+        return (2 * number_hash[:number]).to_i
+        when '/'
+        return (2 / number_hash[:number]).to_i
+    end
+end
+ 
+ def one(number_hash = nil)
+    return 1 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (1 + number_hash[:number]).to_i
+        when '-'
+        return (1 - number_hash[:number]).to_i
+        when '*'
+        return (1 * number_hash[:number]).to_i
+        when '/'
+        return (1 / number_hash[:number]).to_i
+    end
+end
+
+def two(number_hash = nil)
+    return 2 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (2 + number_hash[:number]).to_i
+        when '-'
+        return (2 - number_hash[:number]).to_i
+        when '*'
+        return (2 * number_hash[:number]).to_i
+        when '/'
+        return (2 / number_hash[:number]).to_i
+    end
+end
+
+def three(number_hash = nil)
+    return 3 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (3 + number_hash[:number]).to_i
+        when '-'
+        return (3 - number_hash[:number]).to_i
+        when '*'
+        return (3 * number_hash[:number]).to_i
+        when '/'
+        return (3 / number_hash[:number]).to_i
+    end
+end
+
+def four(number_hash = nil)
+    return 4 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (4 + number_hash[:number]).to_i
+        when '-'
+        return (4 - number_hash[:number]).to_i
+        when '*'
+        return (4 * number_hash[:number]).to_i
+        when '/'
+        return (4 / number_hash[:number]).to_i
+    end
+end
+
+def five(number_hash = nil)
+    return 5 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (5 + number_hash[:number]).to_i
+        when '-'
+        return (5 - number_hash[:number]).to_i
+        when '*'
+        return (5 * number_hash[:number]).to_i
+        when '/'
+        return (5 / number_hash[:number]).to_i
+    end
+end
+
+def six(number_hash = nil)
+    return 6 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (6 + number_hash[:number]).to_i
+        when '-'
+        return (6 - number_hash[:number]).to_i
+        when '*'
+        return (6 * number_hash[:number]).to_i
+        when '/'
+        return (6 / number_hash[:number]).to_i
+    end
+end
+  
+def seven(number_hash = nil)
+    return 7 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (7 + number_hash[:number]).to_i
+        when '-'
+        return (7 - number_hash[:number]).to_i
+        when '*'
+        return (7 * number_hash[:number]).to_i
+        when '/'
+        return (7 / number_hash[:number]).to_i
+    end
+end
+
+def eight(number_hash = nil)
+    return 8 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (8 + number_hash[:number]).to_i
+        when '-'
+        return (8 - number_hash[:number]).to_i
+        when '*'
+        return (8 * number_hash[:number]).to_i
+        when '/'
+        return (8 / number_hash[:number]).to_i
+    end
+end
+
+def nine(number_hash = nil)
+    return 9 if number_hash.blank?
+    return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
+    case number_hash[:operation] 
+        when '+'
+        return (9 + number_hash[:number]).to_i
+        when '-'
+        return (9 - number_hash[:number]).to_i
+        when '*'
+        return (9 * number_hash[:number]).to_i
+        when '/'
+        return (9 / number_hash[:number]).to_i
+    end
+end
