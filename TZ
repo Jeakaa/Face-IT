@@ -1,19 +1,19 @@
  
 
  def plus(number)
-    return {operation: '+', number: number}
+    return {operation: '+', number: number.to_f}
  end
  
  def minus(number)
-    return {operation: '-', number: number}
+    return {operation: '-', number: number.to_f}
  end
  
  def times(number)
-    return {operation: '*', number: number}
+    return {operation: '*', number: number.to_f}
  end
  
  def divided_by(number)
-    return {operation: '/', number: number}
+    return {operation: '/', number: number.to_f}
  end
  
  def zero(number_hash = nil)
@@ -21,13 +21,13 @@
     return "Can't divide into '0' " if number_hash[:operation] == '/' && number_hash[:number] == 0
     case number_hash[:operation] 
         when '+'
-        return (2 + number_hash[:number]).to_i
+        return (0 + number_hash[:number]).to_i
         when '-'
-        return (2 - number_hash[:number]).to_i
+        return (0 - number_hash[:number]).to_i
         when '*'
-        return (2 * number_hash[:number]).to_i
+        return (0 * number_hash[:number]).to_i
         when '/'
-        return (2 / number_hash[:number]).to_i
+        return (0 / number_hash[:number]).to_i
     end
 end
  
