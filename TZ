@@ -1,55 +1,17 @@
- 
-array_numbers = [['one',1],['two',2],['three',3],['four',4],['five',5],['six',6],['seven',7],['eight',8],['nine',9],['zero',0]]
-
-array_numbers.each do |array_number|
-    define_method(array_number[0]) do |number_hash = nil|
-        ret_value = ''
-        if number_hash.blank?
-            ret_value = array_number[1]
-        elsif number_hash[:operation] == '/' && number_hash[:number] == 0
-            ret_value = "Can't divide into '0' "
-        else
-            ret_value = eval("#{array_number[1]} #{number_hash[:operation]} #{number_hash[:number]}").to_i
-            ret_value.to_i if number_hash[:operation] == '/'
-        end
-        return ret_value
-    end
-end
- 
- def plus(number)
-    return {operation: '+', number: number.to_f}
- end
- 
- def minus(number)
-    return {operation: '-', number: number.to_f}
- end
- 
- def times(number)
-    return {operation: '*', number: number.to_f}
- end
- 
- def divided_by(number)
-    return {operation: '/', number: number.to_f}
- end
- 
- 
- 
- 
-
   array_numbers = [['one', 1], ['two', 2], ['three', 3], ['four', 4], ['five', 5],
                    ['six', 6], ['seven', 7], ['eight', 8], ['nine', 9], ['zero', 0]]
 
   array_numbers.each do |array_number|
     define_method(array_number[0]) do |number_hash = nil|
       if number_hash.blank?
-        ret_value = array_number[1]
+        array_number[1]
       elsif number_hash[:operation] == '/' && number_hash[:number].zero?
-        ret_value = "Can't divide into '0' "
+        "Can't divide into '0' "
       else
-        ret_value = eval("#{array_number[1]} #{number_hash[:operation]} #{number_hash[:number]}").to_i
-        ret_value.to_i if number_hash[:operation] == '/'
+        elem = eval("#{array_number[1]} #{number_hash[:operation]} #{number_hash[:number]}").to_i
+        elem.to_i if number_hash[:operation] == '/'
+        elem
       end
-      return ret_value
     end
   end
 
